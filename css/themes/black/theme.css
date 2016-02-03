@@ -27,9 +27,9 @@ footer p {
 }
 
 .slide h1 {
-	font-size: 3.2em;
+	font-size: 2.8em;
 	font-weight: bold;
-	color: #666;
+	color: #EEE;
 	margin-bottom: 0;
 	letter-spacing: -.03em;
 	text-rendering: optimizeLegibility;
@@ -53,7 +53,6 @@ footer p {
 
 .slide p {
 	color: #eee;
-	margin-left: 2em;
 }
 
 .slide em {
@@ -109,7 +108,7 @@ footer p {
 	
 	.slide p {
 		font-size: 1.25em;
-		margin-left: .25em;
+		margin-left: 0;
 	}
 	
 	.slide h2 {
@@ -120,4 +119,13 @@ footer p {
 		font-size: 1.25em;
 	}
 
+}
+
+pre{
+	text-align:left;
+	border:1px solid white;
+	background:#EEE;
+	color:#000;
+	font-size:22px;
+	margin:20px 0;
 }

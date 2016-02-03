@@ -4,115 +4,181 @@
 </div>
 <hr>
 <div>
-	<h1>Why?</h1>
-	<p>I got fed up with using Keynote and Powerpoint to create and give presentations.  I'm a web developer for pete's sake, can't I do it in HTML?</p>
-</div>
-<hr>
-<div>
-	<h1>Yes</h1>
-	<p>So, I made a simple presentation framework for the web.  You're looking at it.</p>
-</div>
-<hr>
-<div>
-	<h1>Simple</h1>
-	<p>You just make slides in plain old HTML, and the framework will present them for you.  You can create themes and layouts with CSS.</p>
-</div>
-<hr>
-<div>
-	<h1>Examples</h1>
-	<p>The next few slides show some examples of very simple layouts you might expect to see in a slide presentation.</p>
-</div>
-<hr>
-<div class="slide-layout-title">
-	<h1>Just a Title</h1>
-</div>
-<hr>
-<div class="slide-layout-title">
-	<h1>Title</h1>
-	<h2>With Subtitle</h2>
-</div>
-<hr>
-<div>
-	<h1>Title</h1>
-	<h2>Subtitle</h2>
-	<p>This is a slide with title, subtitle, and some paragraph text. This slide uses a different layout that shifts everything upward to account for the paragraph text.</p>
-</div>
-<hr>
-<div>
-	<h1>Title</h1>
-	<h2>Subtitle and Bullets</h2>
+	<h1>3 Key Pieces of a Webpage</h1>
 	<ul>
-		<li>Titles, and paragraph text are just HTML elements</li>
+		<li>Doctype</li>
+		<li>Head</li>
+		<li>Body</li>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>&lt;!DOCTYPE&nbsp;html&gt;</h1>
+	<p>A document type declaration, or DOCTYPE, is an instruction that associates a particular SGML or XML document (for example, a webpage) with a document type definition (DTD) (for example, the formal definition of a particular version of HTML).</p>
+</div>
+<hr>
+<div>
+	<h1>&lt;!DOCTYPE&nbsp;html&gt;</h1>
+	<ul>
+		<li>The HTML5 Doctype</li>
+		<li>Introduces new HTML5 elements</li>
+		<li>Introduces data-attributes</li>
+		<li>New input types, Placeholder text, autofocus, required &amp; more</li>
+		<li>Is used to validate HTML</li>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>&lt;head&gt;</h1>
+	<p>Where metadata - information about the document - is placed. It is the first element inside an html element. Information here is not visibly displayed on the screen but can impact it.</p>
+</div>
+<hr>
+<div>
+	<h1>&lt;meta&gt;</h1>
+	<pre>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css_final/style.css&quot; media=&quot;screen&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css_final/print.css&quot; media=&quot;print&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;script src=&quot;/assets/js/modernizr.custom.91622.js.pagespeed.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/assets/js/picturefill.min.js&quot; async&gt;&lt;/script&gt;
+	</pre>
+</div>
+<hr>
+<div>
+	<h1>&lt;meta&gt;</h1>
+<pre>
+&lt;meta name=&quot;description&quot; content=&quot;This is what is read by search engines and displayed in search results.&quot;&gt;
+&lt;meta name=&quot;keywords&quot; content=&quot;word1, word2, word3&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;link rel=&quot;canonical&quot; href=&quot;http://www.lmo.com&quot;&gt;
+</pre>
+</div>
+<hr>
+<div>
+	<h1>&lt;meta&gt;</h1>
+	<h2>OpenGraph</h2>
+<pre>
+&lt;meta name=&quot;og:title&quot; content=&quot;Title read by social media&quot;&gt;
+&lt;meta name=&quot;og:site_name&quot; content=&quot;LMO Advertising&quot;&gt;
+&lt;meta name=&quot;og:description&quot; content=&quot;Description read by social media&quot;&gt;
+&lt;meta name=&quot;og:image&quot; content=&quot;http://www.lmo.com/image.jpg&quot;&gt;
+&lt;meta name=&quot;og:url&quot; content=&quot;http://www.lmo.com&quot;&gt;
+</pre>
+<ul>
+	<li>
+		<a href="http://ogp.me/">The Open Graph Protocol</a>
+	</li>
+	<li>
+		<a href="https://developers.facebook.com/tools/debug/">Facebook Debugger</a>
+	</li>
+</ul>
+</div>
+<hr>
+<div>
+	<h1>&lt;body&gt;</h1>
+	<p>Where content of is placed, this information is read by the user and has a direct impact an accessiblity and search engine optimization.</p>
+</div>
+<hr>
+<div>
+	<h1>&lt;headings&gt;</h1>
+	<h2>H1 &mdash; H6</h2>
+	<ul>
+		<li>Headings create the document outline</li>
+		<li>Only one H1 per page, the HTML5 document outline algorithm does not work</li>
+		<li>Never choose a heading for size or style, use CSS</li>
+		<li>Used by search engines for SEO</li>
+	</ul>
+<hr>
+<div>
+	<h1>&lt;headings&gt;</h1>
+	<h2>H1 &mdash; H6</h2>
+	<ul>
+		<li><strong>Never skip a level</strong> when going down, never go from h2 to h4</li> 
+		<li>Can skip levels when going up</li>
+		<li>You can have multiple headings of the same level in a row</li>
+	</ul>
+	</div>
+<hr>
+
+<div>
+<h1>Document Outline</h1>
+	<pre>
+&lt;h1&gt;Sample Outline&lt;/h1&gt;
+  &lt;h2&gt;Second Level Heading&lt;/h2&gt;
+  &lt;h2&gt;Second Level Heading&lt;/h2&gt;
+    &lt;h3&gt;Third Level Heading&lt;/h3&gt;
+      &lt;h4&gt;Fourth Level Heading&lt;/h4&gt;
+  &lt;h2&gt;Second Level Heading&lt;/h2&gt;
+    &lt;h3&gt;Third Level Heading&lt;/h3&gt;
+      &lt;h4&gt;Fourth Level Heading&lt;/h4&gt;
+        &lt;h5&gt;Fifth Level Heading&lt;/h5&gt;
+          &lt;h6&gt;Sixth Level Heading&lt;/h6&gt;
+      &lt;h4&gt;Fourth Level Heading&lt;/h4&gt;
+        &lt;h5&gt;Fifth Level Heading&lt;/h5&gt;
+  &lt;h2&gt;Second Level Heading&lt;/h2&gt;
+	</pre>
+</div>
+<hr>
+<div>
+<h1>Lists</h1>
+	<ul>
+		<li>Three types of Lists
+			<ol>
+				<li>Unordered List</li>
+				<li>Ordered List</li>
+				<li>Definition List</li>
+			</ol>
+		</li>
+		<li>Unordered and Ordered Lists only have &lt;li&gt; as children</li>
+		<li>List items can contain any markup</li>
+	</ul>
+
+</div>
+<hr>
+<div>
+<h1>Lists</h1>
+<p>HTML Description List Element, formerly known as a definition list</p>
+	<pre>
+&lt;dl&gt;
+  &lt;dt&gt;Firefox&lt;/dt&gt;
+  &lt;dd&gt;A free, open source, cross-platform, graphical ...&lt;/dd&gt;
+  &lt;dd&gt;The Red Panda also known as the Lesser Panda, Wah, ...&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;Firefox&lt;/dt&gt;
+  &lt;dt&gt;Mozilla Firefox&lt;/dt&gt;
+  &lt;dd&gt;A free, open source, cross-platform, graphical ...&lt;/dd&gt;
+&lt;/dl&gt;
+	</pre>
+</div>
+<hr>
+
+<div>
+<h1>Images</h1>
+<ul>
+	<li>Images should always have an alt attribute.</li>
+	<li>Alt attributes should describe the purpose of the image not what it is.
 		<ul>
-			<li>e.g. <code>h1</code>, <code>h2</code>, <code>p</code></li>
+			<li>Bad Alt = "Guy holding a bat"</li>
+			<li>Good Alt = "Men enjoying America's favorite past time, Baseball!"</li>
+			<li>If the image is decorative only have a blank alt attribute</li>
+			<li>If no alt attribute screen readers read the image path</li>
+			<li>Alt attributes are used by Google for image search</li>
 		</ul>
-		<li>Bullets, of course</li>
-		<ul>
-			<li>nest,</li>
-			<ul>
-				<li>as you'd expect</li>
-			</ul>
-		</ul>
-	</ul>
+	</li>
+
+</ul>
 </div>
 <hr>
+
 <div>
-	<h1>Links</h1>
-	<p>Since it's HTML, linking is easy, and means you don't have to jump out of Powerpoint or Keynote to view the link.  The back button works, too ... <a href="http://google.com/">try it</a></p>
+<h1>Paragraphs</h1>
+<ul>
+	<li>Always wrap paragraphs in the proper element, &lt;p&gt;</li>
+	<li>Never use two &lt;br&gt;&lt;br&gt; to make 2 paragraphs, the spacing will not be correct.</li>
+	<li>Paragraphs can contain images, links, spans &amp; elments such as &lt;em&gt;, &lt;small&gt; and &lt;abbr&gt;</li>
+</ul>
 </div>
 <hr>
-<div>
-	<h1>More Links</h1>
-	<p>You can link to other slides, too, and the back button will still work like you think it should.  <a href="#11">Try it</a>.</p>
-</div>
-<hr>
-<div>
-	<h1>Layouts</h1>
-	<h2>Just use CSS</h2>
-	<ul>
-		<li>Layouts are just CSS classes</li>
-		<ul>
-			<li>e.g. <code>slide-layout-title</code></li>
-		</ul>
-		<li>There are a few built-in, as you've seen</li>
-		<li>You can define your own</li>
-	</ul>
-</div>
-<hr>
-<div>
-	<h1>Themes</h1>
-	<h2>You guessed it, CSS</h2>
-	<ul>
-		<li>Themes are also CSS classes</li>
-		<li>You're looking at the 'gray' theme right now</li>
-		<li>You can, of course, define your own</li>
-	</ul>
-</div>
-<hr>
-<div>
-	<h1>Transitions</h1>
-	<h2>CSS again!</h2>
-	<ul>
-		<li>Slide transitions are defined using CSS3</li>
-		<li>This presentation uses the 'fade' transition</li>
-		<li>Can be integrated into a theme or mixed-and-matched</li>
-		<li>And yep, you can define your own</li>
-	</ul>
-</div>
-<hr>
-<div>
-	<h1>Mobile</h1>
-	<h2>Landscape, portrait, touch, swipe</h2>
-	<p>It has mobile viewport support in the builtin template and themes, plus touch and swipe event support for navigation.</p>
-</div>
-<hr>
-<div>
-	<h1>Engineered</h1>
-	<h2>MVC, OOCSS, and AMD</h2>
-	<p>Cutting edge tech, packaged for simplicity.  Use it out of the box, or drop in code for your own slide models, views, and controllers.</p>
-</div>
-<hr>
-<div class="slide-layout-title">
-	<h1>Get it</h1>
-	<h2>Now available on <a href="https://github.com/briancavalier/slides">github</a></h2>
-</div>
